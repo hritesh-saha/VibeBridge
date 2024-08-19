@@ -37,5 +37,5 @@ io.on("connection",socket=>{
 
 
 server.listen(port,()=>{
-    console.log("server is running on port 3001");
+    console.log("server is running");
 })
