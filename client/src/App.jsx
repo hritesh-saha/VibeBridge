@@ -3,7 +3,7 @@ import io from 'socket.io-client'
 import { useState } from 'react';
 import Chat from './Chat';
 
-const socket=io.connect("https://vibe-bridge-server.vercel.app");
+const socket=io.connect("https://vibe-bridge-server.vercel.app/");
 
 function App() {
  const [form,setForm]=useState({username:"",room:""});
