@@ -4,7 +4,9 @@ import { useState } from 'react';
 import Chat from './Chat';
 
 const socket=io.connect("https://vibe-bridge-server.vercel.app/",{
-  transports: ["websocket"]
+  transports: ["websocket"],
+  forceNew: true,
+  path: "/socket.io"
 });
 
 function App() {

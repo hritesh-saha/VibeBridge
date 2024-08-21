@@ -7,8 +7,8 @@ const cors=require("cors");
 const{Server}=require("socket.io");
 const port=process.env.SERVER_PORT;
 const corsOptions = {
-    origin: "https://vibe-bridge-client.vercel.app",
-    methods: ["GET", "POST"],
+    origin:"https://vibe-bridge-client.vercel.app",
+    methods:["GET", "POST"],
     credentials: true
 };
 app.use(cors(corsOptions));
