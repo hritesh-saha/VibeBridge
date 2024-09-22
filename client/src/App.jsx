@@ -3,7 +3,7 @@ import io from 'socket.io-client'
 import { useState } from 'react';
 import Chat from './Chat';
 
-const socket=io.connect("https://vibe-bridge-server.vercel.app/",{
+const socket=io.connect("http://localhost:3001/",{
   transports: ["websocket"],
   forceNew: true,
   path: "/socket.io"
@@ -19,7 +19,7 @@ function App() {
  }
  const joinRoom=()=>{
   if(form.username!==""&&form.room!==""){
-    socket.emit("join_room",form.room)
+    socket.emit("join_room",form)
     setShowChat(true)
   }
   //setForm({username:"",room:""})
